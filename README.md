@@ -19,19 +19,16 @@ This is a real-time hand gesture recognition system using OpenCV, MediaPipe, sci
 
 - Python 3.9 (recommended)
 - Webcam
-- `Data_source.xlsx` for gesture storage
-- Background images: `Back_5.png`, `Back_6.png`, `Back_7.png`
-
 ---
 
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/yourusername/gesture-recognition.git
-cd gesture-recognition
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+git clone https://github.com/Kamil-Ahmed-Shaik/hand-gesture-recognition-project.git
+cd hand-gesture-recognition-project
 pip install -r requirements.txt
+python add_gesture.py  ##To add gesture(Creates the Data_source.xlsx file and model_filename.pkl at the beginning)
+python recognise_gesture.py
 ```
 
 ---
@@ -53,13 +50,13 @@ pip install -r requirements.txt
 ## 📂 Folder Structure
 
 ```
-gesture-recognition/
-├── gesture_capture.py
-├── gesture_predictor.py
+hand-gesture-recognition-project/
+├── recognise_gesture.py
 ├── Data_source.xlsx
 ├── Back_5.png
 ├── Back_6.png
 ├── Back_7.png
+├── add_gesture.py
 ├── model_filename.pkl
 ├── requirements.txt
 └── README.md
@@ -90,8 +87,11 @@ joblib==1.4.2
 
 ---
 
-## 📬 Contact
+## 📬 Process flow
 
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+-Install all the Dependencies using the command "pip install -r requirements.txt"
+-It is necessary to add the hand gestures(execution of add_gesture.py) before performing the recognition task(execution of recognise_gesture.py)
+-The Repository does not contain Data_source.xlsx and model_filename.pkl files,But the are generated during the execution of add_gesture.py at beginning
+
+
 
