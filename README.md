@@ -35,12 +35,12 @@ python recognise_gesture.py
 
 ## 🧠 How It Works
 
-### ➕ Gesture Capture (`gesture_capture.py`)
+### ➕ Gesture Capture (`add_gesture.py`)
 - Press `t` to capture the gesture.
 - Press `f` to save it in `Data_source.xlsx`.
 - Press `q` to quit without saving.
 
-### 🔍 Gesture Recognition (`gesture_predictor.py`)
+### 🔍 Gesture Recognition (`recognise_gesture.py`)
 - Runs real-time recognition.
 - Displays prediction on screen.
 - Press `e` to exit.
@@ -90,8 +90,8 @@ joblib==1.4.2
 ## 📬 Process flow
 
 -Install all the Dependencies using the command "pip install -r requirements.txt"
--It is necessary to add the hand gestures(execution of add_gesture.py) before performing the recognition task(execution of recognise_gesture.py)
--The Repository does not contain Data_source.xlsx and model_filename.pkl files,But the are generated during the execution of add_gesture.py at beginning
+-It is required to add the hand gestures(execution of add_gesture.py) before performing the recognition task(execution of recognise_gesture.py)
+-The Repository does not contain Data_source.xlsx and model_filename.pkl files  at beginning,But the are generated during the execution of add_gesture.py
 
 
 
