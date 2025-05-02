@@ -51,6 +51,7 @@ python recognise_gesture.py
 
 ```
 hand-gesture-recognition-project/
+├── demo_images/
 ├── recognise_gesture.py
 ├── Data_source.xlsx
 ├── Back_5.png
@@ -91,7 +92,9 @@ joblib==1.4.2
 
 -Install all the Dependencies using the command "pip install -r requirements.txt"
 -It is required to add the hand gestures(execution of add_gesture.py) before performing the recognition task(execution of recognise_gesture.py)
--The Repository does not contain Data_source.xlsx and model_filename.pkl files  at beginning,But the are generated during the execution of add_gesture.py
+-The Repository does not contain Data_source.xlsx files at beginning,But the are generated during the execution of add_gesture.py
+-The Repository does not contain model_filename.pkl files at beginning,But the are generated during the execution of recognise_gesture.py
+-Press the `t` key onces for each of different orientations and distances of the gesture from the cam,Atlast press `f` key to save the captured data (or) press `q` key to discard the captured data
 
 
 
